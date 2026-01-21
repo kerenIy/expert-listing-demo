@@ -104,7 +104,7 @@ export default function Header() {
             {navIcons.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <button
+                <p
                   key={index}
                   onClick={item.onClick}
                   className="text-white hover:text-white/80 transition-colors cursor-pointer block mx-[10%] mt-5"
@@ -113,7 +113,7 @@ export default function Header() {
                   <span className="flex items-center space-x-4">
                     {IconComponent} <span>{item.label}</span>
                   </span>
-                </button>
+                </p>
               );
             })}
           </div>

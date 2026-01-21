@@ -51,14 +51,14 @@ export default function Header() {
               return (
                 <Tooltip key={item.label}>
                   <TooltipTrigger>
-                    <button
+                    <p
                       key={index}
                       onClick={item.onClick}
                       className="text-white hover:text-white/80 transition-colors cursor-pointer"
                       aria-label={item.label}
                     >
                       {IconComponent}
-                    </button>
+                    </p>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>{item.label}</p>
